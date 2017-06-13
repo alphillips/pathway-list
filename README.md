@@ -1,16 +1,50 @@
 # pathway-list
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+React component for a list of "pathways" or links with arrows and nice borders.
 
-Describe pathway-list here.
+## Usage
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+### Install
+```
+npm i @react-ag-components/pathway-list --save
+```
+### Use in your project
+```
+import PathwayList from '@react-ag-components/pathway-list'
+```
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```
+<PathwayList>
+  {this.state.list.map((item) =>
+    <li key={item.id}>
+      <a href={'#/item.link/' + item.id}>
+        {item.description}
+      </a>
+    </li>
+  )}
+</PathwayList>
+```
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+## Contributing
+
+Get the repository
+```
+git clone https://github.com/alphillips/pathway-list
+```
+
+Update dependencies
+```
+npm install
+```
+
+Run the project
+```
+npm start
+```
+
+### Deploy to npm
+#### Build
+`npm run build -- --copy-files`
+
+#### Publish
+`npm publish --access public`

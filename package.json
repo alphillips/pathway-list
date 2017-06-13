@@ -1,6 +1,6 @@
 {
   "name": "@react-ag-components/pathway-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "pathway-list React component",
   "main": "lib/index.js",
   "module": "es/index.js",
